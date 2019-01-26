@@ -1128,8 +1128,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libgpustats \
     libloc_api_v02 \
-    libsdm-disp-vndapis \
     libtime_genoff \
+    libsdm-disp-vndapis \
     QtiSystemService \
     QtiTelephonyService \
     datastatusnotification \
