@@ -99,7 +99,6 @@ PRODUCT_COPY_FILES += \
     vendor/smartisan/sdm660-common/proprietary/vendor/etc/surround_sound_3mic/surround_sound_rec_AZ.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/surround_sound_3mic/surround_sound_rec_AZ.cfg \
     vendor/smartisan/sdm660-common/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     vendor/smartisan/sdm660-common/proprietary/vendor/lib/hw/audio.primary.sdm660.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.sdm660.so \
-    vendor/smartisan/sdm660-common/proprietary/vendor/lib/hw/camera.sdm660.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.sdm660.so \
     vendor/smartisan/sdm660-common/proprietary/vendor/lib/libSensorManagerHAL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSensorManagerHAL.so \
     vendor/smartisan/sdm660-common/proprietary/vendor/lib/libarcsoft_beautyshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_beautyshot.so \
     vendor/smartisan/sdm660-common/proprietary/vendor/lib/libarcsoft_dualcam_refocus.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_dualcam_refocus.so \
@@ -110,16 +109,12 @@ PRODUCT_COPY_FILES += \
     vendor/smartisan/sdm660-common/proprietary/vendor/lib/libarcsoft_smart_denoise.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_smart_denoise.so \
     vendor/smartisan/sdm660-common/proprietary/lib/libifaa_daemon.so:system/lib/libifaa_daemon.so \
     vendor/smartisan/sdm660-common/proprietary/lib/libifaa_jni.so:system/lib/libifaa_jni.so \
-    vendor/smartisan/sdm660-common/proprietary/vendor/lib/libmm-qcamera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-qcamera.so \
-    vendor/smartisan/sdm660-common/proprietary/vendor/lib/libmmcamera_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_interface.so \
-    vendor/smartisan/sdm660-common/proprietary/vendor/lib/libmmjpeg_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmjpeg_interface.so \
     vendor/smartisan/sdm660-common/proprietary/vendor/lib/libmmlib2d_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmlib2d_interface.so \
     vendor/smartisan/sdm660-common/proprietary/vendor/lib/libmms_gyro_vstab.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmms_gyro_vstab.so \
     vendor/smartisan/sdm660-common/proprietary/vendor/lib/libmms_gyro_vstab_auth.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmms_gyro_vstab_auth.so \
     vendor/smartisan/sdm660-common/proprietary/vendor/lib/libmms_hal_vstab.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmms_hal_vstab.so \
     vendor/smartisan/sdm660-common/proprietary/vendor/lib/libmms_warper_vstab.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmms_warper_vstab.so \
     vendor/smartisan/sdm660-common/proprietary/vendor/lib/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmpbase.so \
-    vendor/smartisan/sdm660-common/proprietary/vendor/lib/libqomx_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_core.so \
     vendor/smartisan/sdm660-common/proprietary/vendor/lib/libsmart_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsmart_hdr.so \
     vendor/smartisan/sdm660-common/proprietary/vendor/lib/libtinycompress.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinycompress.so \
     vendor/smartisan/sdm660-common/proprietary/vendor/lib/libtt_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtt_panorama.so \
@@ -274,7 +269,6 @@ PRODUCT_COPY_FILES += \
     vendor/smartisan/sdm660-common/proprietary/vendor/lib/libchromatix_s5k4e8_sunny_zsl_video_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4e8_sunny_zsl_video_3a.so \
     vendor/smartisan/sdm660-common/proprietary/vendor/lib/libchromatix_s5k4e8_zsl_preview_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4e8_zsl_preview_3a.so \
     vendor/smartisan/sdm660-common/proprietary/vendor/lib/libchromatix_s5k4e8_zsl_video_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4e8_zsl_video_3a.so \
-    vendor/smartisan/sdm660-common/proprietary/vendor/lib/libdualcameraddm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdualcameraddm.so \
     vendor/smartisan/sdm660-common/proprietary/vendor/lib/libedge_smooth_hvx_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libedge_smooth_hvx_stub.so \
     vendor/smartisan/sdm660-common/proprietary/vendor/lib/libfastcvadsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvadsp_stub.so \
     vendor/smartisan/sdm660-common/proprietary/vendor/lib/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvopt.so \
@@ -446,6 +440,7 @@ PRODUCT_COPY_FILES += \
     vendor/smartisan/sdm660-common/proprietary/vendor/lib64/soundfx/libqcvirt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcvirt.so
 
 PRODUCT_PACKAGES += \
+    libdualcameraddm \
     ifaa_fw \
     dm-tool \
     logic_volume

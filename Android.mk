@@ -19,6 +19,17 @@ LOCAL_PATH := $(call my-dir)
 ifneq ($(filter osborn oxford,$(TARGET_DEVICE)),)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := libdualcameraddm
+LOCAL_MODULE_OWNER := smartisan
+LOCAL_SRC_FILES := proprietary/vendor/lib/libdualcameraddm.so
+LOCAL_MULTILIB := 32
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_VENDOR_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := ifaa_fw
 LOCAL_MODULE_OWNER := smartisan
 LOCAL_SRC_FILES := proprietary/framework/ifaa_fw.jar
