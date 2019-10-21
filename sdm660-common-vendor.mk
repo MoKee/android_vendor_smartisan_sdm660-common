@@ -1129,7 +1129,6 @@ PRODUCT_PACKAGES += \
     imssettings \
     uceShimService \
     CNEService \
-    com.qualcomm.location \
     dpmserviceapp \
     ims \
     qcrilmsgtunnel \
